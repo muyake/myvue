@@ -6,6 +6,6 @@ export default [{
 	path: '/',
 	component: index
 }, {
-	path: '/content',
+	path: '/content/:id',
 	component: content
 }, ]

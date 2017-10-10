@@ -8,7 +8,11 @@ Vue.use(VueRouter)
 import App from './App.vue'
 // 引用路由配置文件
 import routes from './router/index'
-// 使用配置文件规则
+// 引用工具文件
+import utils from './utils/index.js'
+// 将工具方法绑定到全局
+Vue.prototype.$utils = utils
+	// 使用配置文件规则
 const router = new VueRouter({
 		routes
 	})
