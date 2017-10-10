@@ -21,6 +21,14 @@ import api from './api/index.js'
 // 将API方法绑定到全局
 Vue.prototype.$api = api
 
+//import '../static/js/jquery-3.2.1.min.js'
+import $ from 'jquery'
+// 配置百度编辑器
+import '../static/ue/ueditor.config.js'
+import '../static/ue/ueditor.all.min.js'
+import '../static/ue/lang/zh-cn/zh-cn.js'
+import '../static/ue/ueditor.parse.min.js'
+
 // 跑起来吧
 new Vue({
 	router,
